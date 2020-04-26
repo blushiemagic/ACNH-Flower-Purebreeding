@@ -1,0 +1,102 @@
+pansies
+
+---
+
+genes: R, Y, W
+
+R = 0,	Y = 0,	W < 2		-> white
+R > Y,		W < 2		-> red
+R > 0,	R = Y,	R + W < 4	-> orange
+R < Y,		W <= Y		-> yellow
+R + Y < 2,	W = 2		-> blue
+R = 2,		W = 2		-> purple
+
+---
+
+purebreeds
+
+RR-YY-WW: purple'
+RR-YY-ww: orange
+RR-yy-WW: purple
+RR-yy-ww: red
+rr-YY-WW: yellow'
+rr-YY-ww: yellow
+rr-yy-WW: blue
+rr-yy-ww: white
+
+---
+
+red:		RR-yy-ww
+yellow:		rr-YY-ww
+w-white:	rr-yy-Ww
+
+r-blue:		Rr-yy-WW
+w-orange:	RR-YY-Ww
+
+---
+
+ry-orange:	Rr-Yy-ww: red + yellow
+y-red:		RR-Yy-ww: ry-orange + red (25%, 33.3%a)
+r-red:		Rr-yy-ww: ry-orange + red (25%, 33.3%a)
+r-yellow:	Rr-YY-ww: ry-orange + yellow (25%, 33.3%b)
+y-yellow:	rr-Yy-ww: ry-orange + yellow (25%, 33.3%b)
+orange:		RR-YY-ww: y-red + y-red (25%), r-yellow + r-yellow (25%)
+
+blue:		rr-yy-WW: white + white (25%)
+
+white:		rr-yy-ww: r-red + r-red (25%), y-yellow + y-yellow (25%)
+
+rw-red:		Rr-yy-Ww: red + blue
+r-blue:		Rr-yy-WW: rw-red + rw-red (12.5%, 66.7%c), rw-red + blue (25%, 50%c)
+purple:		RR-yy-WW: rw-red + rw-red (6.25%), r-blue + r-blue (25%)
+
+yw-yellow:	rr-Yy-Ww: yellow + blue
+y-blue:		rr-Yy-WW: yw-yellow + blue (25%, 50%d)
+yellow':	rr-YY-WW: y-blue + y-blue (25%)
+
+rw-yellow:	Rr-YY-Ww: yellow' + orange
+w-orange:	RR-YY-Ww: rw-yellow + rw-yellow (12.5%, 66.7%e), rw-yellow + orange (25%, 50%e)
+purple':	RR-YY-WW: rw-yellow + rw-yellow (6.25%), w-orange + w-orange (25%)
+
+---
+
+test a: want y-red and r-red
+
+red + yellow = 100% ry-orange
+r-red + yellow = 50% y-yellow, 50% ry-orange
+y-red + yellow = 50% r-yellow, 50% ry-orange
+
+r-red + r-red = 25% white, 50% r-red, 25% red
+y-red + y-red = 25% pink, 50% y-red, 25% red
+
+---
+
+test b: want r-yellow and y-yellow
+
+yellow + red = 100% ry-orange
+y-yellow + red = 50% r-red, 50% ry-orange
+r-yellow + red = 50% y-red, 50% ry-orange
+
+y-yellow + y-yellow = 25% white, 50% y-yellow, 25% yellow
+r-yellow + r-yellow = 25% pink, 50% r-yellow, 25% yellow
+
+---
+
+test c: want r-blue
+
+blue + yellow = 100% yw-yellow
+r-blue + yellow = 50% x-orange, 50% yw-yellow
+
+---
+
+test d: want y-blue
+
+blue + red = 100% rw-red
+y-blue + red = 50% x-orange, 50% rw-red
+
+---
+
+test e: want w-orange
+
+orange + purple = 100% yw-red
+w-orange + purple = 50% y-purple, 50% yw-red

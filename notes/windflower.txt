@@ -1,0 +1,130 @@
+windflowers
+
+---
+
+genes: R, Y, W
+
+R = 0,	Y = 0,	W < 2		-> white
+R > Y,		W < 2		-> red
+R < Y,		W <= Y		-> orange
+R > 0,	R = Y,	R + W < 4	-> pink
+R + Y < 2,	W = 2		-> blue
+R = 2,		W = 2		-> purple
+
+---
+
+purebreeds
+
+RR-YY-WW: purple'
+RR-YY-ww: pink
+RR-yy-WW: purple
+RR-yy-ww: red
+rr-YY-WW: orange'
+rr-YY-ww: orange
+rr-yy-WW: blue
+rr-yy-ww: white
+
+---
+
+s-red:		RR-yy-ww
+s-orange:	rr-YY-ww
+s-white:	rr-yy-Ww
+
+s-blue: 	Rr-yy-WW
+s-pink:		RR-YY-Ww
+
+---
+
+red:		RR-yy-ww: s-red
+
+orange:		rr-YY-ww: s-orange
+
+ry-pink:	Rr-Yy-ww: s-red + s-orange
+y-red:		RR-Yy-ww: ry-pink + ry-pink (12.5%, 40%a), ry-pink + s-red (25%, 33.3%a)
+r-red:		Rr-yy-ww: ry-pink + ry-pink (12.5%, 40%a), ry-pink + s-red (25%, 33.3%a)
+r-orange:	Rr-YY-ww: ry-pink + ry-pink (12.5%, 40%b), ry-pink + s-orange (25%, 33.3%b)
+y-orange:	rr-Yy-ww: ry-pink + ry-pink (12.5%, 40%b), ry-pink + s-orange (25%, 33.3%b)
+pink:		RR-YY-ww: y-red + y-red (25%), r-orange + r-orange (25%), ry-pink + ry-pink (6.25%, 20%c!)
+
+blue:		rr-yy-WW: s-white + s-white (25%)
+
+white:		rr-yy-ww: r-red + r-red (25%), y-orange + y-orange (25%),
+			ry-pink + ry-pink (6.25%), s-white + s-white (25%, 33.3%d!)
+
+rw-red:		Rr-yy-Ww: s-red + blue
+s-blue:		Rr-yy-WW: rw-red + rw-red (12.5%, 66.7%e), rw-red + blue (25%, 50%e)
+purple:		RR-yy-WW: rw-red + rw-red (6.25%), s-blue + s-blue (25%)
+
+yw-orange:	rr-Yy-Ww: s-orange + blue
+y-blue:		rr-Yy-WW: yw-orange + blue (25%, 50%f)
+orange':	rr-YY-WW: y-blue + y-blue (25%)
+
+rw-orange:	Rr-YY-Ww: orange' + pink
+s-pink:		RR-YY-Ww: rw-orange + rw-orange (12.5%, 66.7%g), rw-orange + pink (25%, 50%g)
+purple':	RR-YY-WW: rw-orange + rw-orange (6.25%), s-pink + s-pink (25%)
+
+---
+
+test a: want y-red and r-red
+
+s-red + s-orange = 100% ry-pink
+r-red + s-orange = 50% y-orange, 50% ry-pink
+y-red + s-orange = 50% r-orange, 50% ry-pink
+
+r-red + r-red = 25% white, 50% r-red, 25% s-red
+y-red + y-red = 25% pink, 50% y-red, 25% s-red
+
+---
+
+test b: want r-orange and y-orange
+
+s-orange + s-red = 100% ry-pink
+y-orange + s-red = 50% r-red, 50% ry-pink
+r-orange + s-red = 50% y-red, 50% ry-pink
+
+y-orange + y-orange = 25% white, 50% y-orange, 25% s-orange
+r-orange + r-orange = 25% pink, 50% r-orange, 25% s-orange
+
+---
+
+test c: want pink - can fail
+
+ry-pink + s-white = 25% ?-pink, 25% ?-red, 25% ?-orange, 25% ?-white
+pink + s-white = 100% ?-pink
+
+---
+
+test d: want white - can fail
+
+s-white + blue = 50% blue, 50% s-white
+white + blue = 100% s-white
+
+---
+
+test e: want s-blue
+
+blue + s-orange = 100% yw-orange
+s-blue + s-orange = 50% x-pink, 50% yw-orange
+
+blue + blue = 100% blue
+s-blue + s-blue = 25% purple, 50% s-blue, 25% blue
+
+---
+
+test f: want y-blue
+
+blue + s-red = 100% rw-red
+y-blue + s-red = 50% x-pink, 50% rw-red
+
+blue + blue = 100% blue
+y-blue + y-blue = 25% orange', 50% y-blue, 25% blue
+
+---
+
+test g: want s-pink
+
+pink + purple = 100% yw-red
+s-pink + purple = 50% y-purple, 50% yw-red
+
+pink + pink = 100% pink
+s-pink + s-pink = 25% purple', 50% s-pink, 25% pink

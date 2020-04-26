@@ -1,0 +1,72 @@
+Tulip
+
+red 2 12, orange 8 12, yellow 4 12, pink 5 12, white 3 12, black 7 12, purple 6 12
+
+w-red red blue seedred
+yellow yellow white pure seedyellow
+w-white white blue seedwhite
+orange orange white island
+pink pink white island
+y-black black yellow island
+r-red red red
+white' white deepblue pure
+r-white white red
+red red white pure
+black black white pure
+y-orange orange yellow
+purple' purple deepblue pure
+yw-yellow yellow green
+y-yellow yellow yellow
+y-white white yellow
+yellow' yellow deepblue pure
+ry-yellow' yellow grey
+y-red red yellow
+purple purple white pure
+white white white pure
+
+white', white blue
+w-red, w-white, r-red 25
+r-red, r-red, white' 25
+
+red, red
+w-red, w-white, r-white 25
+r-white, r-white, red 25
+
+pink, pink
+w-red, w-white, pink 50
+red, white', pink 100
+
+black, black
+w-red, w-red, black 25
+r-red, r-red, black 25
+
+y-orange, orange yellow
+w-red, yellow, y-orange 50
+yellow, black, y-orange 100
+
+purple', purple blue
+y-orange, y-orange, purple' 6
+y-orange, y-orange, y-black 12, black 6
+y-orange, black, y-black 25, black 25
+- black white red 100, y-black white orange 50 red 50
+y-black, y-black, purple' 25
+
+orange, orange
+yellow, purple', orange 100
+
+yellow', yellow blue
+yellow, w-white, yw-yellow 50, y-yellow 50
+- y-yellow black red 50 orange 50, yw-yellow black pink 25 yellow 25 red 25 orange 25
+yw-yellow, yw-yellow, y-white 12, white' 6, w-white 12, white 6
+- white' white' white 100, w-white white' white 100, white white' white 100, y-white white' yellow 50 white 50
+y-white, y-white, yellow' 25
+
+purple, purple
+red, yellow', ry-yellow' 100
+ry-yellow', ry-yellow', purple 6
+ry-yellow', ry-yellow', y-red 12, red 6
+ry-yellow', red, y-red 25, red 25
+- red white' pink 100, y-red white' yellow 50 pink 50
+y-red, y-red, purple 25
+
+white, white, x

@@ -1,0 +1,81 @@
+hyacinths
+
+---
+
+genes: R, Y, W
+
+R > Y,	W >= Y,		2R - 1 > W	-> red
+R = 1,	Y > 0,	W = 0			-> orange
+Y > 0,	R + Y >= W,	2R - 1 <= W	-> yellow
+R = 1,	Y = 0,	W = 1		-	-> pink
+R + Y = W/2		-	-	-> white
+R = 2,	Y = 2		-	-	-> purple
+none of the above	-	-	-> blue
+
+---
+
+purebreeds
+
+RR-YY-WW: purple'
+RR-YY-ww: purple
+RR-yy-WW: red'
+RR-yy-ww: red
+rr-YY-WW: yellow'
+rr-YY-ww: yellow
+rr-yy-WW: blue
+rr-yy-ww: white
+
+---
+
+seeds/islands
+
+w-red:		RR-yy-Ww
+yellow:		rr-YY-ww
+w-white:	rr-yy-Ww
+
+orange:		Rr-YY-ww
+pink:		Rr-yy-Ww
+blue':		RR-Yy-ww
+
+---
+
+r-white:	Rr-yy-WW: w-red + w-white (25%)
+red':		RR-yy-WW: r-white + r-white (25%)
+
+r-red:		Rr-yy-ww: w-red + w-white (25%)
+white:		rr-yy-ww: r-red + r-red (25%)
+
+pink:		Rr-yy-Ww: w-red + w-white (50%), red' + white (100%)
+
+blue:		rr-yy-WW: w-white + w-white (25%), r-white + r-white (25%)
+
+yw-yellow:	rr-Yy-Ww: yellow + blue (100%)
+y-white:	rr-Yy-WW: yw-yellow + blue (25%, 50%a)
+yellow':	rr-YY-WW: y-white + y-white (25%)
+
+ry-yellow':	Rr-Yy-WW: red' + yellow' (100%)
+y-red':		RR-Yy-WW: ry-yellow' + ry-yellow' (12.5%, 66.7%b), ry-yellow' + red' (25%, 50%b)
+purple':	RR-YY-WW: ry-yellow' + ry-yellow' (6.25%), y-red' + y-red' (25%)
+
+y-orange:	Rr-Yy-ww: w-red + yellow (50%)
+rw-yellow:	Rr-YY-Ww: yellow + purple' (100%)
+orange:		Rr-YY-ww: rw-yellow + yellow (25%)
+
+purple:		RR-YY-ww: y-orange + y-orange (6.25%), orange + orange (25%)
+
+blue':		RR-Yy-ww: purple + w-red (50%)
+red:		RR-yy-ww: blue' + blue' (25%)
+
+---
+
+test a: want y-white
+
+w-white + white = 100% white
+y-white + white = 50% yellow, 50% white
+
+---
+
+test b: want y-red'
+
+red' + white: 100% pink
+y-red' + white: 50% yellow, 50% pink

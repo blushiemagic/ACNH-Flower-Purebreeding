@@ -1,0 +1,95 @@
+tulips
+
+---
+
+genes: R, Y, W
+
+R > Y,	W > R - 2,	2R - 1 > W	-> red
+R = 1,	Y > 0,	W = 0		-	-> orange
+Y > 0,	R + Y >= W,	2R - 1 <= W	-> yellow
+R = 1,	Y = 0,	W = 1		-	-> pink
+R + Y <= W/2		-	-	-> white
+R = 2,	Y = 2		-	-	-> purple
+R = 2,	Y < 2,	W = 0		-	-> black
+
+---
+
+purebreeds:
+
+RR-YY-WW: purple
+RR-YY-ww: purple'
+RR-yy-WW: red
+RR-yy-ww: black
+rr-YY-WW: yellow'
+rr-YY-ww: yellow
+rr-yy-WW: white
+rr-yy-ww: white'
+
+---
+
+w-red:		RR-yy-Ww
+yellow:		rr-YY-ww
+w-white:	rr-yy-Ww
+
+orange:		Rr-YY-ww
+pink:		Rr-yy-Ww
+y-black:	RR-Yy-ww
+
+---
+
+r-red:		Rr-yy-ww: w-red + w-white (25%)
+white':		rr-yy-ww: r-red + r-red (25%)
+
+r-white:	Rr-yy-WW: w-red + w-white (25%)
+red:		RR-yy-WW: r-white + r-white (25%)
+
+pink:		Rr-yy-Ww: w-red + w-white (50%), white' + red (100%)
+
+black:		RR-yy-ww: w-red + w-red (25%), r-red + r-red (25%)
+
+y-orange:	Rr-Yy-ww: w-red + yellow (50%), yellow + black (100%)
+
+y-black:	RR-Yy-ww: y-orange + y-orange (12%, 66.7%a), y-orange + black (25%, 50%a)
+purple':	RR-YY-ww: y-orange + y-orange (6.25%), y-black + y-black (25%)
+
+orange:		Rr-YY-ww: yellow + purple' (100%)
+
+yw-yellow:	rr-Yy-Ww: yellow + w-white (50%b)
+y-white:	rr-Yy-WW: yw-yellow + yw-yellow (12.5%, 33.3%c)
+yellow':	rr-YY-WW: y-white + y-white (25%)
+
+ry-yellow':	Rr-Yy-WW: red + yellow' (100%)
+y-red:		RR-Yy-WW: ry-yellow' + ry-yellow' (12.5%, 66.7%d), ry-yellow' + red (25%, 50%d)
+purple:		RR-YY-WW: ry-yellow' + ry-yellow' (6.25%), y-red + y-red (25%)
+
+white:		rr-yy-WW: impossible to be 100% certain
+
+---
+
+test a: want y-black
+
+black + white = 100% red
+y-black + white = 50% orange, 50% red
+
+---
+
+test b: want yw-yellow
+
+y-yellow + black = 50% red, 50% orange
+yw-yellow + black = 25% pink, 25% yellow, 25% red, 25% orange
+
+---
+
+test c: want y-white
+
+white' + white' = 100% white
+w-white + white' = 100% white
+white + white' = 100% white
+y-white + white' = 50% yellow, 50% white
+
+---
+
+test d: want y-red
+
+red + white' = 100% pink
+y-red + white' = 50% yellow, 50% pink

@@ -1,0 +1,6 @@
+guides/*.exe
+src/.vs
+src/bin
+src/obj
+src/packages
+src/sprites.png

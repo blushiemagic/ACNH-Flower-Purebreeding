@@ -1,0 +1,68 @@
+Hyacinth
+
+red 18 10, orange 19 10, yellow 17 10, pink 20 10, white 16 10, purple 0 11, blue 1 11
+
+w-red red blue seedred
+yellow yellow white pure seedyellow
+w-white white blue seedwhite
+orange orange white island
+pink pink white island
+blue' blue grey island
+r-white white red
+red' red deepblue pure
+r-red red red
+white white white pure
+blue blue white pure
+yw-yellow yellow green
+y-white white yellow
+yellow' yellow deepblue pure
+ry-yellow' yellow orange
+y-red' red green
+purple' purple deepblue pure
+y-orange orange yellow
+rw-yellow yellow purple
+purple purple white pure
+red red white pure
+
+red', red blue
+w-red, w-white, r-white 25
+r-white, r-white, red' 25
+
+white, white
+w-red, w-white, r-red 25
+r-red, r-red, white 25
+
+pink, pink
+w-red, w-white, pink 50
+red', white, pink 100
+
+blue, blue
+w-white, w-white, blue 25
+r-white, r-white, blue 25
+
+yellow', yellow blue
+yellow, blue, yw-yellow 100
+yw-yellow, blue, y-white 25, w-white 25
+- w-white white white 100, y-white white yellow 50 white 50
+y-white, y-white, yellow' 25
+
+purple', purple blue
+red', yellow', ry-yellow' 100
+ry-yellow', ry-yellow', purple' 6
+ry-yellow', ry-yellow', y-red' 12, red' 6
+ry-yellow', red', y-red' 25, red' 25
+- red' white pink 100, y-red' white yellow 50 pink 50
+y-red', y-red', purple' 25
+
+y-orange orange, orange
+w-red, yellow, y-orange 50
+yellow, purple', rw-yellow 100
+rw-yellow, yellow, orange 25
+
+purple, purple
+y-orange, y-orange, purple 6
+orange, orange, purple 25
+
+red, red
+purple, w-red, blue' 50
+blue', blue', red 25
