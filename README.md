@@ -8,6 +8,7 @@
 * [Pansies](#pansies)
 * [Tulips](#tulips)
 * [Q&A](#qa)
+* [Credits](#credits)
 
 ## To-Do List
 
@@ -73,3 +74,7 @@ These flowers can be differentiated by "test" breeding with another flower.
 Because they have different genes behind the scene, they will produce children with different colors.
 
 [Back to Top](#table-of-contents)
+
+## Credits
+
+The colors that each genotype results in were obtained from here: [ACNH Flower Research](https://docs.google.com/spreadsheets/d/1rbYbQ0i3SuTu30KTma5dO4uuJWr_SjOZXA1l4UOIHWo/edit#gid=55079806)
