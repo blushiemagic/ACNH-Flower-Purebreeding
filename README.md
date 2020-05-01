@@ -7,13 +7,13 @@
 * [Hyacinths](#hyacinths)
 * [Pansies](#pansies)
 * [Tulips](#tulips)
+* [Cosmos](#cosmos)
+* [Mums](#mums)
 * [Q&A](#qa)
 * [Credits](#credits)
 
 ## To-Do List
 
-* Cosmos
-* Mums
 * Lilies
 * Roses
 
@@ -41,6 +41,17 @@
 
 [Back to Top](#table-of-contents)
 
+## Cosmos
+
+![Cosmos Purebreeding](guides/cosmo.txt.png)
+
+[Back to Top](#table-of-contents)
+
+## Mums
+![Mums Purebreeding](guides/mum.txt.png)
+
+[Back to Top](#table-of-contents)
+
 ## Q&A
 
 **Q: What is this? How is this guide different from other guides?**
@@ -59,7 +70,7 @@ In other words, breeding two of the same purebreeding flower together will alway
 
 **Q: Why would I want purebreeds?**
 
-A: To be blunt, this guide is not for most people. Getting all purebreeds will require much more work than just gettting each color.
+A: To be blunt, this guide is not for most people. Getting all purebreeds will require much more work than just getting each color.
 
 However, there are several advantages to getting all purebreeds:
 * Two identical purebreeds will clone themselves when bred. Because there is a higher chance to breed two flowers than to clone a single flower, this allows you to duplicate flowers faster.
@@ -72,6 +83,16 @@ A: Some breeding pairs will result in flowers that have the same color but diffe
 These flowers can be differentiated by "test" breeding with another flower.
 
 Because they have different genes behind the scene, they will produce children with different colors.
+
+**Q: What does it mean when a flower is "impossible to test for with 100% certainty"?**
+
+A: When you're testing between two or more flowers, then the "impossible" flower will always produce colors that the other flowers in the test can also produce.
+
+The certainty of an "impossible" flower will increase every time you perform the test.
+
+If you do many, many tests, this certainty can even reach 99.9999...%. However, this is still not 100%.
+
+I do not bother listing combinations for most flowers that cannot achieve 100% certainty, due to how unlucky I can be.
 
 [Back to Top](#table-of-contents)
 

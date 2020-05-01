@@ -119,11 +119,6 @@ namespace AnimalCrossingFlowers
             {
                 border = data[0][1][1];
             }
-            if (data[0].Length > 2)
-            {
-                breedingPairs.Add(new BreedingPairSection(null, targets, background, border));
-                return;
-            }
             if (data.Length < 2)
             {
                 throw new InputException("Breeding pair section must list breeding pairs");
@@ -138,6 +133,15 @@ namespace AnimalCrossingFlowers
                 if (line[0][0] == "-")
                 {
                     lastPair.AddBreedingTest(ParseBreedingTest(line));
+                }
+                else if (line[0][0] == "!")
+                {
+                    if (line[0].Length < 2)
+                    {
+                        throw new InputException("Please specify impossible flower");
+                    }
+                    lastPair = new BreedingPair(GetFlower(line[0][1]));
+                    pairs.Add(lastPair);
                 }
                 else
                 {

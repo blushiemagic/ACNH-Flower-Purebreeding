@@ -1,0 +1,66 @@
+mums
+
+---
+
+Genes: R, Y, W
+
+R > 0,	(2 - W) * Y = 2 - R	-> red
+Y > (R + W)/2,	R + Y < 3	-> yellow
+R = 1,	Y <= W/2	-	-> pink
+R = 0,	Y = W/2		-	-> white
+(R + Y)%3 = 0,	(R + W/2)%3 > 0	-> purple
+R = 2,	Y = 2,	W < 2		-> green
+
+---
+
+purebreeds
+
+RR-YY-WW: y-red'
+RR-YY-ww: green
+RR-yy-WW: red
+RR-yy-ww: w-red'
+rr-YY-WW: yellow'
+rr-YY-ww: yellow
+rr-yy-WW: purple
+rr-yy-ww: white
+
+---
+
+w-red':		RR-yy-ww
+yellow:		rr-YY-ww
+w-white:	rr-yy-Ww
+
+y-pink:		Rr-Yy-WW
+rw-purple:	RR-Yy-Ww
+
+---
+
+purple:		rr-yy-WW: w-white + w-white (25%)
+
+w-pink:		Rr-yy-Ww: w-red' + purple (100%)
+ry-yellow:	Rr-Yy-ww: w-red' + yellow (100%)
+pink':		Rr-yy-ww: ry-yellow + w-red' (25%)
+
+r-purple:	RR-Yy-ww: ry-yellow + w-red' (25%)
+green:		RR-YY-ww: r-purple + r-purple (25%)
+
+white:		rr-yy-ww: pink' + pink' (25%)
+
+yw-yellow:	rr-Yy-Ww: yellow + purple (100%)
+w-pink:		Rr-yy-Ww: red + purple (100%)
+y-purple:	Rr-YY-ww: green + yellow (100%)
+
+---
+
+have: 200, 220, 020, 002, 000, 001, 110, 100, 210
+
+need: 022, 202, 222
+
+220 + 101 = 211
+220 + 011 = 121
+
+---
+
+221
+121
+021 or 120

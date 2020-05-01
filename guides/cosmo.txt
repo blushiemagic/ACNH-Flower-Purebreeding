@@ -1,0 +1,58 @@
+Cosmos
+
+red 10 10, orange 13 10, pink 12 10, yellow 11 10, white 9 10, black 14 10
+
+w-red' red deepblue pure seedred
+w-yellow yellow blue seedyellow
+w-white white blue seedwhite
+rw-orange orange purple island
+y-pink pink yellow island
+y-white white yellow
+yellow' yellow deepblue pure
+y-orange orange yellow
+yw-orange orange green
+w-pink pink blue
+pink' pink deepblue
+orange' orange deepyellow
+y-red' red deepyellow pure
+black black white pure
+w-black black blue
+red red white pure
+yellow yellow white pure
+white white white pure
+white' white deepblue pure
+
+yellow', yellow blue
+w-yellow, w-white, y-white 25
+y-white, y-white, yellow' 25
+
+y-orange yw-orange, orange
+w-red', w-yellow, yw-orange 50, y-orange 50
+- y-orange yellow' yellow 50 orange 50, yw-orange yellow' white 12 pink 12 yellow 38 orange 38
+w-red', yellow', yw-orange 100
+
+w-pink pink' y-pink, pink
+w-red', w-white, w-pink 50, pink' 50
+w-red', y-white, w-pink 50
+yellow', w-pink, y-pink 25
+
+y-red', red yellow
+y-pink, yellow', orange' 25
+orange', orange', y-red' 25
+
+black w-black, black
+w-red', y-red', rw-orange 100
+rw-orange, y-red', w-black 25
+rw-orange, rw-orange, black 6, w-black 12
+- black y-red' black 100, w-black y-red' red 50 black 50
+! black
+
+red, red
+! red
+
+yellow, yellow
+! yellow
+
+white white', white
+! white
+! white'

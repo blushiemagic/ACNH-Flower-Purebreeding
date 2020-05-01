@@ -24,9 +24,9 @@ namespace AnimalCrossingFlowers
 
         public Flower(string id, string color, string background, bool pure, string source)
         {
-            if (id == "-")
+            if (id == "-" || id == "!")
             {
-                throw new InputException("Flower ID cannot be \"-\"");
+                throw new InputException("Flower ID cannot be \"-\" or \"!\"");
             }
             ID = id;
             Color = color;
@@ -75,7 +75,7 @@ namespace AnimalCrossingFlowers
             backgrounds["purple"] = System.Drawing.Color.FromArgb(255, 127, 255);
             backgrounds["green"] = System.Drawing.Color.FromArgb(127, 255, 127);
             backgrounds["grey"] = System.Drawing.Color.FromArgb(191, 191, 191);
-            backgrounds["deepyellow"] = System.Drawing.Color.FromArgb(255, 255, 0);
+            backgrounds["deepyellow"] = System.Drawing.Color.FromArgb(223, 223, 0);
             backgrounds["deepblue"] = System.Drawing.Color.FromArgb(0, 0, 255);
 
             sources["seedred"] = new Point(0, 10);

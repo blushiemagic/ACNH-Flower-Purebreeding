@@ -1,0 +1,53 @@
+Mum
+
+red 16 13, yellow 15 13, white 14 13, pink 17 13, green 18 13, purple 19 13
+
+200-red red deepblue pure seedred
+020-yellow yellow white pure seedyellow
+001-white white blue seedwhite
+110-yellow yellow orange
+100-pink pink white
+101-pink pink blue
+000-white white white pure
+002-purple purple white pure
+210-purple purple red
+220-green green white pure
+011-yellow yellow green
+012-white white yellow
+022-yellow yellow deepblue pure
+121-purple purple green
+221-green green blue
+222-red red deepyellow pure
+202-red red white pure
+
+002-purple, purple
+001-white, 001-white, 002-purple 25
+
+100-pink, pink
+200-red, 001-white, 100-pink 50, 101-pink 50
+200-red, 020-yellow, 110-yellow 100
+200-red, 110-yellow, 100-pink 25
+
+220-green, green
+200-red, 110-yellow, 210-purple 25
+210-purple, 210-purple, 220-green 25
+
+000-white, white
+100-pink, 100-pink, 000-white 25
+
+022-yellow, yellow blue
+020-yellow, 002-purple, 011-yellow 100
+011-yellow, 002-purple, 012-white 25, 001-white 25
+- 001-white 200-red pink 100, 012-white 200-red red 50 pink 50
+012-white, 012-white, 022-yellow 25
+
+222-red, red yellow
+022-yellow, 220-green, 121-purple 100
+121-purple, 121-purple, 222-red 6
+121-purple, 121-purple, 221-green 12, 220-green 6
+121-purple, 220-green, 221-green 25, 220-green 25
+- 220-green 002-purple red 100, 221-green 002-purple pink 50 red 50
+221-green, 221-green, 222-red 25
+
+202-red, red
+! 202-red

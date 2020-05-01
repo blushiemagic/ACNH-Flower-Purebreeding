@@ -26,20 +26,18 @@ purple' purple deepyellow pure
 pink, pink
 red, orange, ry-pink 100
 ry-pink, red, y-red 25, r-red 25, red 25
-- red orange pink 100, r-red orange orange 50 pink 50, y-red orange orange 50 pink 50
-- r-red r-red white 25 red 75, y-red y-red pink 25 red 75
+- red w-white red 100, r-red w-white white 50 red 50, y-red w-white pink 50 red 50
 y-red, y-red, pink 25
 ry-pink, orange, r-orange 25, y-orange 25, orange 25
-- orange red pink 100, y-orange red red 50 pink 50, r-orange red red 50 pink 50
-- y-orange y-orange white 25 orange 75, r-orange r-orange pink 25 orange 75
+- orange w-white orange 100, y-orange w-white white 50 orange 50, r-orange w-white pink 50 orange 50
 r-orange, r-orange, pink 25
-
-blue, blue
-w-white, w-white, blue 25
 
 white, white
 r-red, r-red, white 25
 y-orange, y-orange, white 25
+
+blue, blue
+w-white, w-white, blue 25
 
 purple, purple
 red, blue, rw-red 100

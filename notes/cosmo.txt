@@ -1,0 +1,79 @@
+cosmos
+
+---
+
+genes: R, Y, W
+
+R = 2,		W/2 >= (Y + 1)/2		-> red
+R > 0,	Y > 0,	Y > W/2,	R + Y < 4	-> orange
+R = 1,		W/2 >= Y	-	-	-> pink
+R = 0,	Y > 0,	Y > W/2		-	-	-> yellow
+R = 0,		W/2 >= Y	-	-	-> white
+R = 2,	Y = 2,	W < 2		-	-	-> black
+
+---
+
+purebreeds
+
+RR-YY-WW: y-red'
+RR-YY-ww: black
+RR-yy-WW: red
+RR-yy-ww: w-red'
+rr-YY-WW: yellow'
+rr-YY-ww: yellow
+rr-yy-WW: white
+rr-yy-ww: white'
+
+others
+
+Rr-YY-ww: orange
+Rr-yy-WW: pink
+
+---
+
+w-red':		RR-yy-ww
+w-yellow:	rr-YY-Ww
+w-white:	rr-yy-Ww
+
+rw-orange:	RR-Yy-Ww
+y-pink:		Rr-Yy-WW
+
+---
+
+y-white:	rr-Yy-WW: w-yellow + w-white (25%)
+yellow':	rr-YY-WW: y-white + y-white (25%)
+
+y-orange:	Rr-Yy-ww: w-red' + w-yellow (50%a), impossible to be 100% certain
+yw-orange:	Rr-Yy-Ww: w-red' + w-yellow (50%a), w-red' + yellow' (100%)
+
+w-pink:		Rr-yy-Ww: w-red' + w-white (50%)
+pink':		Rr-yy-ww: w-red' + w-white (50%)
+y-pink:		Rr-Yy-WW: yw-orange + yellow' (12.5%)
+
+orange':	Rr-WW-YY: y-pink + yellow' (25%)
+y-red':		RR-YY-WW: orange' + orange' (25%)
+
+rw-orange:	RR-Yy-Ww: w-red' + y-red' (100%)
+black:		RR-YY-ww: rw-orange + rw-orange (6.25%b), impossible to be 100% certain
+w-black:	RR-YY-Ww: rw-orange + rw-orange (12.5%b)
+
+red:		RR-yy-WW: impossible to be 100% certain
+
+yellow:		rr-YY-ww: impossible to be 100% certain
+
+white:		rr-yy-WW: impossible to be 100% certain
+white':		rr-yy-ww: impossible to be 100% certain
+
+---
+
+test a: want yw-orange
+
+y-orange + yellow' = 50% yellow, 50% orange
+yw-orange + yellow' = 12.5% white, 12.5% pink, 37.5% yellow, 37.5% orange
+
+---
+
+test b: want w-black
+
+black + y-red' = 100% black
+w-black + y-red' = 50% red, 50% black
