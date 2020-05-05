@@ -1,0 +1,109 @@
+Rose
+
+red 14 11, orange 18 11, yellow 16 11, pink 17 11, white 15 11, black 20 11, purple 19 11, blue 0 12
+
+2001-red red deepblue seedred
+0200-yellow yellow white-grey pure seedyellow
+0010-white white deepyellow-grey seedwhite
+2022-pink pink white pure island
+2211-orange orange blue-white island
+2002-pink pink deepblue pure
+2000-black black deepblue pure
+0020-purple purple white-grey pure
+0100-yellow yellow yellow-grey
+0000-white white deepgreen-grey pure
+0110-white white yellow-grey
+0120-purple purple yellow-grey
+0220-white white white-grey pure
+1100-orange orange orange
+1210-orange orange purple
+1220-red red orange
+2220-blue blue white pure
+2101-orange orange yellow-white
+2210-orange orange blue
+2102-yellow yellow orange
+2221-red red deepyellow
+2222-white white deepred pure
+2112-white white orange
+2122-purple purple orange
+1021-pink pink red
+1020-red red red
+2021-red red white
+2020-black black white pure
+2200-orange orange white pure
+0202-yellow yellow white pure
+2202-yellow yellow deepred pure
+0002-white white deepgreen pure
+0222-white white white pure
+0022-purple purple white pure
+
+2002-pink, pink blue
+2001-red, 2001-red, 2002-pink 25
+
+2000-black, black blue
+2001-red, 2001-red, 2000-black 25
+
+0020-purple, purple black
+0010-white, 0010-white, 0020-purple 25
+
+0000-white, white green
+0200-yellow, 0010-white, 0100-yellow 50
+0100-yellow, 0100-yellow, 0000-white 25
+
+0220-white, white black
+0200-yellow, 0010-white, 0110-white 50
+0200-yellow, 0020-purple, 0110-white 100
+0110-white, 0020-purple, 0120-purple 25, 0020-purple 25
+- 0020-purple 0200-yellow white 100, 0120-purple 0200-yellow yellow 50 white 50
+0120-purple, 0120-purple, 0220-white 25
+
+1100-orange 1210-orange, orange
+0200-yellow, 2001-red, 1100-orange 50
+0200-yellow, 2000-black, 1100-orange 100
+0220-white, 1100-orange, 1210-orange 25
+
+2220-blue, blue
+1210-orange, 1210-orange, 2220-blue 6
+1210-orange, 1210-orange, 1220-red 12
+1210-orange, 0220-white, 1220-red 25
+1220-red, 1220-red, 2220-blue 25
+
+2222-white, white red
+1100-orange, 2002-pink, 2101-orange 25
+2101-orange, 2220-blue, 2211-orange 25, 2210-orange 25
+- 2210-orange 0200-yellow orange 100, 2211-orange 0200-yellow yellow 50 orange 50
+2101-orange, 2002-pink, 2102-yellow 25
+2102-yellow, 2220-blue, 2211-orange 50
+2211-orange, 2211-orange, 2222-white 6
+2211-orange, 2211-orange, 2221-red 12
+2211-orange, 2220-blue, 2221-red 25
+2221-red, 2221-red, 2222-white 25
+
+2022-pink, pink
+2002-pink, 2222-white, 2112-white 100
+2112-white, 2222-white, 2122-purple 25
+2122-purple, 2122-purple, 2022-pink 25
+
+2020-black, black
+2022-pink, 0020-purple, 1021-pink 100
+1021-pink, 1021-pink, 2020-black 6
+1021-pink, 1021-pink, 1020-red 12, 2021-red 6
+1021-pink, 0020-purple, 1020-red 25
+1021-pink, 2022-pink, 2021-red 25
+1020-red, 1020-red, 2020-black 25
+1020-red, 2021-red, 2020-black 25
+2021-red, 2021-red, 2020-black 25
+
+2200-orange, orange
+! 2200-orange
+
+0202-yellow 2202-yellow, yellow
+! 0202-yellow
+! 2202-yellow
+
+0222-white 0002-white, white
+! 0002-white
+! 0222-white
+
+0022-purple, purple
+! 0022-purple

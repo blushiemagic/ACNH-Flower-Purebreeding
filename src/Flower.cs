@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 
 namespace AnimalCrossingFlowers
 {
@@ -38,9 +39,21 @@ namespace AnimalCrossingFlowers
             {
                 Init();
             }
-            if (!backgrounds.ContainsKey(Background))
+            string background1 = Background;
+            string background2 = null;
+            if (background1.IndexOf('-') >= 0)
             {
-                throw new InputException("Unknown background color: " + Background);
+                int index = background1.IndexOf('-');
+                background1 = background.Substring(0, index);
+                background2 = background.Substring(index + 1);
+            }
+            if (!backgrounds.ContainsKey(background1))
+            {
+                throw new InputException("Unknown background color: " + background1);
+            }
+            if (background2 != null && !backgrounds.ContainsKey(background2))
+            {
+                throw new InputException("Unknown background color: " + background2);
             }
             if (source != null && !sources.ContainsKey(Source))
             {
@@ -50,7 +63,17 @@ namespace AnimalCrossingFlowers
             Icon = new Bitmap(IconSize, IconSize);
             Graphics graphics = Graphics.FromImage(Icon);
             graphics.FillEllipse(borderBrush, 0, 0, IconSize, IconSize);
-            Brush fillBrush = new SolidBrush(backgrounds[Background]);
+            Brush fillBrush;
+            if (background2 == null)
+            {
+                fillBrush = new SolidBrush(backgrounds[background1]);
+            }
+            else
+            {
+                fillBrush = new LinearGradientBrush(new Point(BorderWidth, IconSize / 2),
+                    new Point(IconSize - BorderWidth, IconSize / 2),
+                    backgrounds[background1], backgrounds[background2]);
+            }
             graphics.FillEllipse(fillBrush, BorderWidth, BorderWidth, IconSize - 2 * BorderWidth, IconSize - 2 * BorderWidth);
             fillBrush.Dispose();
             Data.GetFlowerColor(Color).DrawSprite(graphics, (IconSize - Sprites.SpriteSize) / 2, (IconSize - Sprites.SpriteSize) / 2);
@@ -77,6 +100,8 @@ namespace AnimalCrossingFlowers
             backgrounds["grey"] = System.Drawing.Color.FromArgb(191, 191, 191);
             backgrounds["deepyellow"] = System.Drawing.Color.FromArgb(223, 223, 0);
             backgrounds["deepblue"] = System.Drawing.Color.FromArgb(0, 0, 255);
+            backgrounds["deepred"] = System.Drawing.Color.FromArgb(255, 0, 0);
+            backgrounds["deepgreen"] = System.Drawing.Color.FromArgb(0, 223, 0);
 
             sources["seedred"] = new Point(0, 10);
             sources["seedorange"] = new Point(2, 10);

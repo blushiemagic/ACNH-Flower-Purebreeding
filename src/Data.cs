@@ -224,6 +224,10 @@ namespace AnimalCrossingFlowers
 
         public static Flower GetFlower(string id)
         {
+            if (!flowers.ContainsKey(id))
+            {
+                throw new Exception("Flower ID does not exist: " + id);
+            }
             return flowers[id];
         }
 

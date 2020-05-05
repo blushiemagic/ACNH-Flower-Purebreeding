@@ -1,0 +1,7 @@
+before rose.data.txt:
+
+2002 pink = 2001 red x 2001 red (25%)
+
+2000 black = 2001 red x 2001 red (25%)
+
+0020 purple = 0010 white x 0010 white (25%)

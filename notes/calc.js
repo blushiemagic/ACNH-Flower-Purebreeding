@@ -219,7 +219,10 @@ class BreedingPath {
 
 var seeds = [];
 for (var k = numGeneSets + 1; k < lines.length - 1; k++) {
-    var geneSet = [parseInt(lines[k][0]), parseInt(lines[k][1]), parseInt(lines[k][2])];
+    var geneSet = [];
+    for (var j = 0; j < numGenes; j++) {
+        geneSet.push(parseInt(lines[k][j]));
+    }
     seeds.push(getGeneSetUID(geneSet));
 }
 for (var i = 0; i < numGeneSets; i++) {
@@ -231,7 +234,10 @@ for (var i = 0; i < numGeneSets; i++) {
 var goals = lines[lines.length - 1].split(' ');
 for (var k = 0; k < goals.length; k++) {
     goals[k] = goals[k].trim();
-    var geneSet = [parseInt(goals[k][0]), parseInt(goals[k][1]), parseInt(goals[k][2])];
+    var geneSet = [];
+    for (var j = 0; j < numGenes; j++) {
+        geneSet.push(parseInt(goals[k][j]));
+    }
     goals[k] = getGeneSetUID(geneSet);
 }
 

@@ -2,20 +2,16 @@
 
 ## Table of Contents
 
-* [To-Do List](#to-do-list)
 * [Windflowers](#windflowers)
 * [Hyacinths](#hyacinths)
 * [Pansies](#pansies)
 * [Tulips](#tulips)
 * [Cosmos](#cosmos)
 * [Mums](#mums)
+* [Lilies](#lilies)
+* [Roses](#roses)
 * [Q&A](#qa)
 * [Credits](#credits)
-
-## To-Do List
-
-* Lilies
-* Roses
 
 ## Windflowers
 
@@ -48,7 +44,20 @@
 [Back to Top](#table-of-contents)
 
 ## Mums
+
 ![Mums Purebreeding](guides/mum.txt.png)
+
+[Back to Top](#table-of-contents)
+
+## Lilies
+
+![Lilies Purebreeding](guides/lily.txt.png)
+
+[Back to Top](#table-of-contents)
+
+## Roses
+
+![Roses Purebreeding](guides/rose.txt.png)
 
 [Back to Top](#table-of-contents)
 

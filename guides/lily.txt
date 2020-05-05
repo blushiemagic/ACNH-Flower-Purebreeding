@@ -1,0 +1,55 @@
+Lily
+
+red 1 15, orange 2 15, yellow 0 15, pink 3 15, white 20 14, black 4 15
+
+201-red red white seedred
+020-yellow yellow white pure seedyellow
+002-white white white pure seedwhite
+101-pink pink purple
+202-pink pink white pure
+200-black black white pure
+110-orange orange orange
+100-red red red
+000-white white deepblue pure
+210-black black yellow
+220-orange orange white pure
+211-red red yellow
+212-pink pink yellow
+222-white white orange pure
+011-white white green
+010-yellow yellow yellow
+021-yellow yellow blue
+022-white white deepyellow pure
+
+200-black, black
+201-red, 201-red, 200-black 25
+
+202-pink, pink
+201-red, 201-red, 202-pink 25
+200-black, 002-white, 101-pink 100
+
+000-white, white blue
+020-yellow, 200-black, 110-orange 100
+110-orange, 110-orange, 000-white 6
+110-orange, 110-orange, 100-red 12
+110-orange, 200-black, 100-red 25
+100-red, 100-red, 000-white 25
+
+220-orange, orange
+110-orange, 200-black, 210-black 25, 200-black 25
+- 200-black 002-white pink 100, 210-black 002-white yellow 50 pink 50
+210-black, 210-black, 220-orange 25
+
+222-white, white orange
+202-pink, 220-orange, 211-red 100
+211-red, 211-red, 222-white 6
+211-red, 211-red, 212-pink 12, 202-pink 6
+211-red, 202-pink, 212-pink 25, 202-pink 25
+- 202-pink 002-white white 100, 212-pink 002-white yellow 50 white 50
+212-pink, 212-pink, 222-white 25
+
+022-white, white yellow
+002-white, 020-yellow, 011-white 100
+011-white, 020-yellow, 021-yellow 25, 020-yellow 25, 010-yellow 25
+- 020-yellow 200-black orange 100, 010-yellow 200-black red 50 orange 50, 021-yellow 200-black yellow 50 orange 50
+021-yellow, 021-yellow, 022-white 25
